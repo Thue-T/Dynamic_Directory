@@ -1,0 +1,9 @@
+\section{Workflow Orchestration}
+
+The Discovery Agent requires a tool to orchestrate the workflow (receiving requests, making API calls, etc.). We researched several self-hosted options suitable for a TrueNAS home server.
+
+\input{assets/tables/orchestration_tools_comparison.tex}
+
+\subsection{Recommendation: Node-RED}
+
+While n8n is a powerful tool, it may be overkill for this specific use case. \textbf{Node-RED is the recommended choice} for its simplicity, extremely low resource usage, and ease of setup. It provides all the necessary features to build the Discovery Agent's orchestration layer with minimal overhead.

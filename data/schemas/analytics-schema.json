@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "analytics-schema.json",
+  "title": "Analytics Schema",
+  "description": "Schema for tracking user interactions to improve search and filter relevance",
+  "type": "object",
+  "properties": {
+    "searches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "query": { "type": "string" },
+          "filters": { "type": "object" },
+          "location": { "type": "string" },
+          "distance": { "type": "integer" },
+          "resultCount": { "type": "integer" },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "sessionId": { "type": "string" }
+        }
+      },
+      "description": "Search events"
+    },
+    "clicks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "companyId": { "type": "string" },
+          "searchId": { "type": "string" },
+          "searchQuery": { "type": "string" },
+          "position": { "type": "integer", "description": "Position in search results" },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "sessionId": { "type": "string" }
+        }
+      },
+      "description": "Company card click events"
+    },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "companyId": { "type": "string" },
+          "searchId": { "type": "string" },
+          "searchQuery": { "type": "string" },
+          "matchedCapabilities": { "type": "array", "items": { "type": "string" } },
+          "contactMethod": { "type": "string", "enum": ["email", "phone", "website", "form"] },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "sessionId": { "type": "string" }
+        }
+      },
+      "description": "Contact events (highest value)"
+    },
+    "parameterSuccess": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "searches": { "type": "integer" },
+          "clicks": { "type": "integer" },
+          "contacts": { "type": "integer" },
+          "conversionRate": { "type": "number" }
+        }
+      },
+      "description": "Success metrics per capability parameter"
+    },
+    "searchPatterns": {
+      "type": "object",
+      "properties": {
+        "commonTerms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "term": { "type": "string" },
+              "count": { "type": "integer" }
+            }
+          }
+        },
+        "commonFilters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "filterId": { "type": "string" },
+              "count": { "type": "integer" }
+            }
+          }
+        },
+        "peakHours": {
+          "type": "array",
+          "items": { "type": "integer" }
+        }
+      },
+      "description": "Aggregated search patterns"
+    }
+  }
+}

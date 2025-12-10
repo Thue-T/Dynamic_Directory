@@ -1,0 +1,16 @@
+\section{AI API Integration}
+
+The core of the Discovery Agent is its ability to use AI to extract and structure data from unstructured text (like web pages). This requires orchestrating calls to multiple AI APIs in parallel for speed and resilience.
+
+\input{assets/tables/ai_api_comparison.tex}
+
+\subsection{Recommended Strategy for AI Orchestration}
+
+\begin{itemize}
+    \item \textbf{Use Python with `asyncio`:} For any custom code, Python's `asyncio` library is perfect for making parallel API calls.
+    \item \textbf{Use Official SDKs:} Always use the official Python SDKs for each AI provider.
+    \item \textbf{Use JSON Mode:} To get structured, predictable data from the AI models, use the JSON mode offered by the APIs.
+    \item \textbf{Implement Robust Error Handling:} Use a retry mechanism with exponential backoff for each API call.
+    \item \textbf{Manage Costs:} Implement caching and set up billing alerts.
+\end{itemize}
+
