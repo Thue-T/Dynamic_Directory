@@ -23,7 +23,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://dsm.dk/"
+        "website": "https://dsm.dk/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": "25.11",
@@ -107,7 +110,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://eu.nlmk.com/en/plate/dansteel/"
+        "website": "https://eu.nlmk.com/en/plate/dansteel/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": "https://twitter.com/nlmk_official"
       },
       "industry": {
         "naceCode": "24.10",
@@ -179,7 +185,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://www.dufercodanishsteel.dk/"
+        "website": "https://www.dufercodanishsteel.dk/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": "24.10",
@@ -244,7 +253,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://www.jd-staal.dk/en/"
+        "website": "https://www.jd-staal.dk/en/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": "25.11",
@@ -311,7 +323,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://nomas.dk/en/"
+        "website": "https://nomas.dk/en/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": "25.62",
@@ -391,7 +406,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://www.stantraek.com/denmark/"
+        "website": "https://www.stantraek.com/denmark/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": "25.62",
@@ -462,7 +480,10 @@
       },
       "contact": {
         "phone": "+45 7442 8442",
-        "email": "info@helge-bruhn.dk"
+        "email": "info@helge-bruhn.dk",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": null,
@@ -540,7 +561,10 @@
       "contact": {
         "phone": "+45 5573 8032",
         "email": "info@allsteel.dk",
-        "website": "https://allsteel.dk/en/"
+        "website": "https://allsteel.dk/en/",
+        "linkedin_url": "https://www.linkedin.com/company/all-steel-aps/",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": null,
@@ -599,7 +623,10 @@
       "contact": {
         "phone": "+45 2244 3333",
         "email": "info@ravnsgaard.dk",
-        "website": "https://ravnsgaard.dk/en/"
+        "website": "https://ravnsgaard.dk/en/",
+        "linkedin_url": "https://www.linkedin.com/company/84814962",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": null,
@@ -634,7 +661,7 @@
       "metadata": {
         "createdAt": "2024-05-21T15:18:22Z",
         "updatedAt": "2024-05-21T15:18:22Z",
-        "verified": true,
+        "verified":.json
         "claimedByOwner": false
       }
     },
@@ -658,7 +685,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://www.aalsrode.dk/en/"
+        "website": "https://www.aalsrode.dk/en/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": "25.62",
@@ -728,7 +758,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://ckdeepdrawing.com/"
+        "website": "https://ckdeepdrawing.com/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "naceCode": "25.62",
@@ -788,7 +821,10 @@
       "contact": {
         "phone": null,
         "email": null,
-        "website": "https://givesteel.com/"
+        "website": "https://givesteel.com/",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "twitter_url": ""
       },
       "industry": {
         "primaryIndustry": "Steel Structures",
