@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da" data-theme="light">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +10,15 @@
   <!-- Pico CSS - Minimal framework -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/custom.css">
 </head>
+
 <body>
   <!-- Theme toggle -->
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
@@ -30,62 +37,56 @@
 
     <!-- Search Section -->
     <section id="search-section">
-      <form id="search-form" role="search">
-        <fieldset>
-          <label for="search-query">
-            <strong>Describe what you need</strong>
-            <small>E.g., "welding stainless steel 10mm plates" or "laser cutting carbon steel"</small>
-          </label>
-          <textarea
-            id="search-query"
-            name="query"
-            placeholder="Describe your manufacturing needs in detail..."
-            rows="3"
-            required
-          ></textarea>
-        </fieldset>
+      <div class="control-panel">
+        <form id="search-form" role="search">
+          <!-- Filter Menu (Technical Dropdown Style) -->
+          <div class="filter-menu-bar">
+            <!-- Unified Filter Container -->
+            <details id="technical-filters" class="technical-dropdown">
+              <summary>FILTER PARAMETERS</summary>
+              <div class="filter-content-compact">
+                <!-- Location Section -->
+                <fieldset class="filter-group-technical">
+                  <legend>LOCATION & RANGE</legend>
+                  <div class="input-row">
+                    <input type="text" id="location" name="location" placeholder="POSTAL CODE / CITY"
+                      class="tech-input">
+                    <select id="distance" name="distance" class="tech-select">
+                      <option value="">ANY DISTANCE</option>
+                      <option value="25">MAX 25 KM</option>
+                      <option value="50">MAX 50 KM</option>
+                      <option value="100">MAX 100 KM</option>
+                      <option value="200">MAX 200 KM</option>
+                    </select>
+                  </div>
+                </fieldset>
 
-        <!-- Location Filter (Optional) -->
-        <details id="location-details">
-          <summary>Location filter (optional)</summary>
-          <div class="grid">
-            <label for="location">
-              City or postal code
-              <input
-                type="text"
-                id="location"
-                name="location"
-                placeholder="e.g., Copenhagen, 2100"
-              >
-            </label>
-            <label for="distance">
-              Max distance
-              <select id="distance" name="distance">
-                <option value="">Any distance</option>
-                <option value="25">25 km</option>
-                <option value="50">50 km</option>
-                <option value="100">100 km</option>
-                <option value="200">200 km</option>
-              </select>
-            </label>
+                <!-- Dynamic Filters Section -->
+                <fieldset class="filter-group-technical">
+                  <legend>PRODUCTION CAPABILITIES</legend>
+                  <div id="filter-container" class="dynamic-filters-grid">
+                    <!-- Dynamic filters injected here -->
+                  </div>
+                </fieldset>
+              </div>
+            </details>
           </div>
-        </details>
 
-        <!-- Dynamic Filters - Will be populated based on discovered parameters -->
-        <div id="dynamic-filters" class="dynamic-filters" style="display: none;">
-          <details>
-            <summary>Advanced filters</summary>
-            <div id="filter-container" class="grid">
-              <!-- Filters will be dynamically added here based on data -->
-            </div>
-          </details>
-        </div>
+          <!-- Technical Search Bar -->
+          <div class="search-technical-container">
+            <label for="search-query" class="search-label-tech">
+              MANUFACTURING REQUIREMENTS
+            </label>
+            <textarea id="search-query" name="query"
+              placeholder="DESCRIBE REQUIRED PROCESSES, MATERIALS OR TOLERANCES..." rows="1" required></textarea>
+          </div>
 
-        <button type="submit" id="search-btn">
-          <span class="btn-text">Search Producers</span>
-          <span class="btn-loading" aria-hidden="true" style="display: none;">Searching...</span>
-        </button>
-      </form>
+          <button type="submit" id="search-btn" class="cta-button">
+            <span class="btn-text">Find Producers Matches</span>
+            <span class="btn-loading" aria-hidden="true" style="display: none;">Searching...</span>
+          </button>
+        </form>
+      </div>
     </section>
 
     <!-- Results Section -->
@@ -147,4 +148,5 @@
   <script src="js/search.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
