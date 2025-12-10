@@ -1,0 +1,629 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-09T00:00:00Z",
+  "totalCompanies": 11,
+  "companies": [
+    {
+"id": "dk-dsm-001",
+      "cvr": "78780916",
+      "name": "Danish Steel Manufacturing A/S",
+      "legalName": "Danish Steel Manufacturing A/S",
+      "description": "Reliable partner in steel production, combining expertise with advanced technology to deliver customized solutions. Handles laser cutting, CNC machining, and welding. Offers recognized and quality-guaranteed smithing work north of Aalborg.",
+      "address": {
+        "street": "Erhvervsparken 41",
+        "city": "Brønderslev",
+        "postalCode": "9700",
+        "region": "Nordjylland",
+        "country": "Denmark",
+        "coordinates": { "lat": 57.263, "lng": 9.954 }
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://dsm.dk/"
+      },
+      "industry": {
+        "naceCode": "25.11",
+        "naceDescription": "Manufacture of metal structures and parts",
+        "primaryIndustry": "Steel Manufacturing",
+        "subIndustries": ["Sheet Metal Processing", "Welding", "CNC Machining"]
+      },
+      "capabilities": {
+        "processes": ["Laser Cutting", "CNC Machining", "Welding", "Sheet Metal Processing", "Smithing"],
+        "materials": ["Steel", "Stainless Steel", "Various Metals"],
+        "welding": {
+          "types": ["MIG", "TIG"],
+          "available": true
+        },
+        "cutting": {
+          "types": ["Laser"],
+          "available": true
+        },
+        "machining": {
+          "types": ["CNC"],
+          "available": true
+        }
+      },
+      "certifications": [],
+      "companyInfo": {
+        "employees": null,
+        "founded": null
+      },
+      "source": {
+        "type": "website",
+        "url": "https://dsm.dk/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.9,
+        "verifiedBy": "human"
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "claimedByOwner": false
+      }
+    },
+    {
+      "id": "dk-dansteel-002",
+      "cvr": "10092922",
+      "name": "NLMK DanSteel",
+      "legalName": "NLMK DanSteel A/S",
+      "description": "Produces hot-rolled structural steel plates for construction, bridge building, wind industry (onshore/offshore), offshore oil and gas, shipbuilding, boiler and pressure vessels and transport. Production capacity of 550,000 tonnes of plates per year.",
+      "address": {
+        "street": "Havnevej 33",
+        "city": "Frederiksværk",
+        "postalCode": "3300",
+        "region": "Hovedstaden",
+        "country": "Denmark",
+        "coordinates": { "lat": 55.972, "lng": 12.021 }
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://eu.nlmk.com/en/plate/dansteel/"
+      },
+      "industry": {
+        "naceCode": "24.10",
+        "naceDescription": "Manufacture of basic iron and steel",
+        "primaryIndustry": "Steel Production",
+        "subIndustries": ["Hot Rolling", "Structural Steel", "Steel Plates"]
+      },
+      "capabilities": {
+        "processes": ["Hot Rolling", "Steel Plate Production"],
+        "materials": ["Structural Steel", "Carbon Steel"],
+        "plates": {
+          "minThickness": 5,
+          "maxThickness": 220,
+          "minWidth": 1000,
+          "maxWidth": 4000,
+          "unit": "mm"
+        },
+        "productionCapacity": {
+          "annual": 550000,
+          "unit": "tonnes"
+        }
+      },
+      "certifications": [],
+      "companyInfo": {
+        "employees": "250-500",
+        "founded": null
+      },
+      "source": {
+        "type": "website",
+        "url": "https://eu.nlmk.com/en/plate/dansteel/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.9,
+        "verifiedBy": "human"
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "claimedByOwner": false
+      }
+    },
+    {
+      "id": "dk-duferco-003",
+      "cvr": "29600953",
+      "name": "Duferco Danish Steel A/S",
+      "legalName": "Duferco Danish Steel A/S",
+      "description": "Historic steel plant originally established in 1940. Produces bar mill products and bright steel. The company is no longer active and all production has ceased.",
+      "address": {
+        "street": null,
+        "city": "Frederiksværk",
+        "postalCode": "3300",
+        "region": "Hovedstaden",
+        "country": "Denmark",
+        "coordinates": { "lat": 55.9667, "lng": 12.0167 }
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://www.dufercodanishsteel.dk/"
+      },
+      "industry": {
+        "naceCode": "24.10",
+        "naceDescription": "Manufacture of basic iron and steel",
+        "primaryIndustry": "Steel Production",
+        "subIndustries": ["Bar Mill", "Cold Drawing", "Bright Steel"]
+      },
+      "capabilities": {
+        "processes": ["Bar Milling", "Cold Drawing"],
+        "materials": ["Steel"],
+        "bars": {
+          "types": ["Flat", "Square", "Round"],
+          "coldDrawn": true
+        }
+      },
+      "certifications": [],
+      "companyInfo": {
+        "employees": null,
+        "founded": 1940
+      },
+      "source": {
+        "type": "website",
+        "url": "https://www.dufercodanishsteel.dk/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.75
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "status": "inactive",
+        "claimedByOwner": false
+      }
+    },
+    {
+      "id": "dk-jdsteel-004",
+      "cvr": "26706327",
+      "name": "JD Stål",
+      "legalName": "JD Stål ApS",
+      "description": "Manufactures and installs all types of steel structures, large and small, in virtually all metals with all types of surfaces. Creates robust and precise forging constructions.",
+      "address": {
+        "street": "Refshalevej 169A",
+        "city": "København K",
+        "postalCode": "1432",
+        "region": "Hovedstaden",
+        "country": "Denmark",
+        "coordinates": null
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://www.jd-staal.dk/en/"
+      },
+      "industry": {
+        "naceCode": "25.11",
+        "naceDescription": "Manufacture of metal structures and parts",
+        "primaryIndustry": "Steel Structures",
+        "subIndustries": ["Forging", "Installation"]
+      },
+      "capabilities": {
+        "processes": ["Steel Construction", "Forging", "Installation"],
+        "materials": ["Steel", "Various Metals"],
+        "structures": {
+          "types": ["Large", "Small"],
+          "installation": true
+        }
+      },
+      "certifications": ["EN 1090"],
+      "companyInfo": {
+        "employees": null,
+        "founded": null
+      },
+      "source": {
+        "type": "website",
+        "url": "https://www.jd-staal.dk/en/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.9,
+        "verifiedBy": "human"
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "claimedByOwner": false
+      }
+    },
+    {
+      "id": "dk-nomas-005",
+      "cvr": "29527490",
+      "name": "Nordic Material Supply A/S (Nomas)",
+      "legalName": "Nordic Material Supply A/S",
+      "description": "Provides laser cutting of materials in modern production sites. Services include cutting, bending, milling, grinding, surface plating and painting, and sub-assembly of metal components.",
+      "address": {
+        "street": "Energivej 3",
+        "city": "Sorø",
+        "postalCode": "4180",
+        "region": "Sjælland",
+        "country": "Denmark",
+        "coordinates": null
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://nomas.dk/en/"
+      },
+      "industry": {
+        "naceCode": "25.62",
+        "naceDescription": "Machining",
+        "primaryIndustry": "Metal Processing",
+        "subIndustries": ["Laser Cutting", "Bending", "Surface Treatment"]
+      },
+      "capabilities": {
+        "processes": ["Laser Cutting", "Bending", "Milling", "Grinding", "Surface Plating", "Painting", "Sub-Assembly"],
+        "materials": ["Steel", "Stainless Steel", "Brass", "Copper", "Aluminium"],
+        "cutting": {
+          "types": ["Laser"],
+          "materials": ["Metal Sheets", "Pipes", "Profiles"]
+        },
+        "surfaceTreatment": ["Plating", "Painting"]
+      },
+      "certifications": [],
+      "companyInfo": {
+        "employees": null,
+        "founded": 2004
+      },
+      "source": {
+        "type": "website",
+        "url": "https://nomas.dk/en/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.9,
+        "verifiedBy": "human"
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "claimedByOwner": false
+      }
+    },
+    {
+      "id": "dk-stantraek-006",
+      "cvr": "12630077",
+      "name": "Stantræk A/S",
+      "legalName": "Stantræk A/S",
+      "description": "Offers high-precision CNC punching, laser cutting, and a combination of both processes. Can cut a wide range of materials from stainless steel to aluminum.",
+      "address": {
+        "street": "Sønderskovvej 14",
+        "city": "Lystrup",
+        "postalCode": "8520",
+        "region": "Midtjylland",
+        "country": "Denmark",
+        "coordinates": null
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://www.stantraek.com/denmark/"
+      },
+      "industry": {
+        "naceCode": "25.62",
+        "naceDescription": "Machining",
+        "primaryIndustry": "Metal Processing",
+        "subIndustries": ["Sheet Metal", "Laser Cutting", "CNC Punching"]
+      },
+      "capabilities": {
+        "processes": ["CNC Punching", "Laser Cutting", "Sheet Metal Processing"],
+        "materials": ["Stainless Steel", "Aluminum", "Steel"],
+        "cutting": {
+          "types": ["Laser", "CNC Punch"],
+          "precision": "high"
+        },
+        "qualityTools": ["FMEA", "PPAP", "SPC"]
+      },
+      "certifications": ["ISO 9001"],
+      "companyInfo": {
+        "employees": null,
+        "founded": null
+      },
+      "source": {
+        "type": "website",
+        "url": "https://www.stantraek.com/denmark/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.9,
+        "verifiedBy": "human"
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "claimedByOwner": false
+      }
+    },,\n"id": "dk-helgebruhn-007",
+      "cvr": "33754612",
+      "name": "Helge Bruhn A/S",
+      "legalName": "Helge Bruhn A/S",
+      "description": "Metal fabrication company in Sønderjylland. Uses TRUMPF TruLaser 3030 (5.0 KW), AMADA A-J Fiber (9 KW), and ERMAKSAN FIBERMAK Momentum Gen-5 (10 KW). Capable of producing down to 0,1 mm accuracy.",
+      "address": {
+        "street": "Ellegårdvej 13",
+        "city": "Sønderborg",
+        "postalCode": "6400",
+        "country": "Denmark"
+      },
+      "contact": {
+        "phone": "+45 7442 8442",
+        "email": "info@helge-bruhn.dk"
+      },
+      "industry": {
+        "naceCode": null,
+        "primaryIndustry": "Metal Fabrication",
+        "subIndustries": [
+          "Laser Cutting",
+          "Sheet Metal",
+          "Bending",
+          "Welding"
+        ]
+      },
+      "capabilities": {
+        "cutting": {
+          "laser": {
+            "power": [
+              5000,
+              9000
+            ],
+            "materials": [
+              "Steel",
+              "Stainless Steel",
+              "Aluminum"
+            ],
+            "maxThickness": {
+              "steel": 25,
+              "stainlessSteel": 20,
+              "aluminum": 12
+            },
+            "accuracy": 0.1
+          }
+        },
+        "bending": {
+          "maxLength": 4000,
+          "maxForce": 220
+        },
+        "welding": {
+          "methods": [
+            "TIG",
+            "MIG/MAG"
+          ]
+        },
+        "surfaceTreatment": [
+          "Galvanizing",
+          "Wet Painting",
+          "Powder Coating"
+        ]
+      },
+      "certifications": [
+        "ISO 9001",
+        "ISO 14001",
+        "EN 1090"
+      ],
+      "source": {
+        "type": "website",
+        "url": "https://www.helge-bruhn.dk/"
+      },
+      "metadata": {
+        "createdAt": "2024-05-21T15:18:22Z",
+        "updatedAt": "2024-05-21T15:18:22Z",
+        "verified": true
+      }
+    },
+    {
+      "id": "dk-allsteel-008",
+      "cvr": "20461934",
+      "name": "All Steel",
+      "legalName": "All Steel ApS",
+      "description": "Over 50 years of experience in metal fabrication. Offers laser cutting, pipe bending, welding, sheet metal fabrication, and machining.",
+      "address": {
+        "street": "Ringstedgade 221",
+        "city": "Næstved",
+        "postalCode": "4700",
+        "country": "Denmark"
+      },
+      "contact": {
+        "phone": "+45 5573 8032",
+        "email": "info@allsteel.dk",
+        "website": "https://allsteel.dk/en/"
+      },
+      "industry": {
+        "naceCode": null,
+        "primaryIndustry": "Metal Fabrication",
+        "subIndustries": [
+          "Laser Cutting",
+          "Pipe Bending",
+          "Welding",
+          "Sheet Metal Fabrication",
+          "Machining"
+        ]
+      },
+      "capabilities": {
+        "laserCutting": {
+          "maxThickness": {
+            "steel": 25,
+            "stainless": 12,
+            "aluminum": 8
+          }
+        },
+        "pipeBending": true,
+        "welding": true,
+        "sheetMetal": true,
+        "machining": true
+      },
+      "certifications": [
+        "ISO 9001"
+      ],
+      "companyInfo": {
+        "founded": 1974,
+        "experience": "Over 50 years"
+      },
+      "source": {
+        "type": "website",
+        "url": "https://allsteel.dk/en/",
+        "retrievedAt": "2024-05-21T14:35:00Z"
+      },
+      "metadata": {
+        "createdAt": "2024-05-21T15:18:22Z",
+        "updatedAt": "2024-05-21T15:18:22Z",
+        "verified": true
+      }
+    },
+    {
+      "id": "dk-ravnsgaard-009",
+            "cvr": "43997424",
+            "name": "Ravnsgaard Metal",
+            "legalName": "Ravnsgaard Metal A/S",
+            "description": "Provides welding of stainless steel, mild steel, aluminum, and common metals. Has Denmark's largest 3D measurement center of its kind for high tolerance requirements.",
+            "address": {
+              "street": "Teglvænget 123-129",
+              "city": "Herning",
+              "postalCode": "7400",
+              "country": "Denmark"
+            },
+            "contact": {
+              "phone": "+45 2244 3333",
+              "email": "info@ravnsgaard.dk",
+              "website": "https://ravnsgaard.dk/en/"
+            },
+            "industry": {
+              "naceCode": null,
+              "primaryIndustry": "Metal Processing",
+              "subIndustries": [
+                "Welding",
+                "3D Measurement"
+              ]
+            },
+            "capabilities": {
+              "welding": {
+                "materials": [
+                  "Stainless Steel",
+                  "Mild Steel",
+                  "Aluminum",
+                  "Common Metals"
+                ],
+                "types": [
+                  "MIG",
+                  "TIG"
+                ]
+              },
+              "qualityControl": {
+                "3DMeasurement": true,
+                "description": "Denmark's largest 3D measurement center"
+              }
+            },
+            "source": {
+              "type": "website",
+              "url": "https://ravnsgaard.dk/en/"
+            },
+            "metadata": {
+              "createdAt": "2024-05-21T15:18:22Z",
+              "updatedAt": "2024-05-21T15:18:22Z",
+              "verified": true,
+              "claimedByOwner": false
+            }
+          },
+    {
+      "id": "dk-aalsrode-010",
+      "cvr": "31483646",
+      "name": "Aalsrode",
+      "legalName": "Aalsrode A/S",
+      "description": "CNC-controlled fibre laser cutting in Grenaa, East Jutland. Can cut ordinary steel, stainless steel, aluminium and other metals, as well as non-metallic materials.",
+      "address": {
+        "street": "Fabrikvej 9",
+        "city": "Grenaa",
+        "postalCode": "8500",
+        "region": "Østjylland",
+        "country": "Denmark",
+        "coordinates": { "lat": 56.4167, "lng": 10.8833 }
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://www.aalsrode.dk/en/"
+      },
+      "industry": {
+        "naceCode": "25.62",
+        "naceDescription": "Machining",
+        "primaryIndustry": "Laser Cutting",
+        "subIndustries": ["Fiber Laser", "CNC"]
+      },
+      "capabilities": {
+        "processes": ["Fiber Laser Cutting", "CNC Cutting"],
+        "materials": ["Steel", "Stainless Steel", "Aluminium", "Non-Metallic Materials"],
+        "cutting": {
+          "types": ["Fiber Laser"],
+          "cnc": true,
+          "materials": ["Steel", "Stainless Steel", "Aluminium", "Non-Metallic"]
+        }
+      },
+      "certifications": [],
+      "companyInfo": {
+        "employees": null,
+        "founded": null
+      },
+      "source": {
+        "type": "website",
+        "url": "https://www.aalsrode.dk/en/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.75
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "claimedByOwner": false
+      }
+    },
+    
+    {
+      "id": "dk-ckjohansen-012",
+      "cvr": "73205328",
+      "name": "C. & K. Johansen A/S",
+      "legalName": "C. & K. Johansen A/S",
+      "description": "Strong partner for precise quality laser cutting of metal workpieces, with continuous focus on material optimization for best price and process.",
+      "address": {
+        "street": "Rosenkrantzvej 38-40",
+        "city": "Horsens",
+        "postalCode": "8700",
+        "region": null,
+        "country": "Denmark",
+        "coordinates": null
+      },
+      "contact": {
+        "phone": null,
+        "email": null,
+        "website": "https://ckdeepdrawing.com/"
+      },
+      "industry": {
+        "naceCode": "25.62",
+        "naceDescription": "Machining",
+        "primaryIndustry": "Metal Processing",
+        "subIndustries": ["Laser Cutting", "Deep Drawing"]
+      },
+      "capabilities": {
+        "processes": ["Laser Cutting", "Deep Drawing"],
+        "materials": ["Metal"],
+        "cutting": {
+          "types": ["Laser"],
+          "precision": "high",
+          "materialOptimization": true
+        }
+      },
+      "certifications": [],
+      "companyInfo": {
+        "employees": null,
+        "founded": null
+      },
+      "source": {
+        "type": "website",
+        "url": "https://ckdeepdrawing.com/",
+        "extractedAt": "2025-12-09T00:00:00Z",
+        "confidence": 0.7
+      },
+      "metadata": {
+        "createdAt": "2025-12-09T00:00:00Z",
+        "updatedAt": "2025-12-10T00:00:00Z",
+        "verified": true,
+        "claimedByOwner": false
+      }
+    }
+  ]
+}

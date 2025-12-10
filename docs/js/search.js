@@ -316,6 +316,9 @@ const Search = {
     // Show results section
     section.style.display = 'block';
 
+    // Smooth scroll to results
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
     if (companies.length === 0) {
       container.innerHTML = `
         <div class="no-results">

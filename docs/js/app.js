@@ -71,6 +71,17 @@ const App = {
           Search.search(query);
         }
       });
+
+      // Enter to Search
+      const searchInput = document.getElementById('search-query');
+      if (searchInput) {
+        searchInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            searchForm.requestSubmit();
+          }
+        });
+      }
     }
 
     // Theme toggle
