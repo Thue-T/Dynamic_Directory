@@ -1,0 +1,275 @@
+/* Custom styles for Danish Producer Directory */
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--pico-secondary-background);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.theme-toggle .sun { display: none; }
+.theme-toggle .moon { display: inline; }
+
+[data-theme="dark"] .theme-toggle .sun { display: inline; }
+[data-theme="dark"] .theme-toggle .moon { display: none; }
+
+/* Header styling */
+header hgroup {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header hgroup h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Search section */
+#search-section {
+  margin-bottom: 2rem;
+}
+
+#search-query {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Location details */
+#location-details {
+  margin-bottom: 1rem;
+}
+
+/* Dynamic filters */
+.dynamic-filters {
+  margin-bottom: 1rem;
+}
+
+.filter-group {
+  margin-bottom: 0.5rem;
+}
+
+.filter-range {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.filter-range input {
+  width: 100px;
+}
+
+/* Button states */
+#search-btn {
+  width: 100%;
+}
+
+#search-btn[aria-busy="true"] .btn-text {
+  display: none;
+}
+
+#search-btn[aria-busy="true"] .btn-loading {
+  display: inline !important;
+}
+
+/* Results section */
+#results-section {
+  margin-top: 2rem;
+}
+
+/* Result card */
+.result-card {
+  background: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: var(--pico-border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-card:hover {
+  border-color: var(--pico-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--pico-primary);
+}
+
+.result-card .company-meta {
+  font-size: 0.875rem;
+  color: var(--pico-muted-color);
+  margin-bottom: 0.75rem;
+}
+
+.result-card .company-capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.capability-tag {
+  background: var(--pico-primary-background);
+  color: var(--pico-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.result-card .match-score {
+  font-size: 0.875rem;
+  color: var(--pico-muted-color);
+}
+
+.match-score strong {
+  color: var(--pico-color);
+}
+
+/* No results */
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--pico-muted-color);
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--pico-muted-border-color) 25%,
+    var(--pico-card-background-color) 50%,
+    var(--pico-muted-border-color) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: var(--pico-border-radius);
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-card {
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+/* Modal styling */
+#company-modal article {
+  max-width: 600px;
+}
+
+#modal-content {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-section {
+  margin-bottom: 1.5rem;
+}
+
+.modal-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.capability-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.capability-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--pico-muted-border-color);
+}
+
+.capability-list li:last-child {
+  border-bottom: none;
+}
+
+.capability-value {
+  font-weight: 500;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--pico-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--pico-border-radius);
+  z-index: 2000;
+  animation: toast-in 0.3s ease;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Footer */
+footer.container {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--pico-muted-border-color);
+  margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  header hgroup h1 {
+    font-size: 1.5rem;
+  }
+
+  .filter-range {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-range input {
+    width: 100%;
+  }
+}
+
+/* Utility classes */
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }

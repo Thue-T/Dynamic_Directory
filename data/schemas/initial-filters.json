@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "description": "Initial filters discovered from Danish steel company data - will evolve over time",
+  "lastUpdated": "2025-12-09T00:00:00Z",
+  "parameters": [
+    {
+      "id": "cutting_max_thickness",
+      "label": "Cutting Max Thickness",
+      "type": "range",
+      "category": "cutting",
+      "unit": "mm",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "occurrences": 5,
+      "addedAt": "2025-12-09T00:00:00Z",
+      "discoveredFrom": "dk-helgebruhn-007"
+    },
+    {
+      "id": "cutting_types",
+      "label": "Cutting Type",
+      "type": "multiselect",
+      "category": "cutting",
+      "options": [
+        {"value": "laser", "label": "Laser"},
+        {"value": "fiber_laser", "label": "Fiber Laser"},
+        {"value": "plasma", "label": "Plasma"},
+        {"value": "waterjet", "label": "Waterjet"},
+        {"value": "cnc_punch", "label": "CNC Punch"}
+      ],
+      "occurrences": 8,
+      "addedAt": "2025-12-09T00:00:00Z"
+    },
+    {
+      "id": "materials",
+      "label": "Materials",
+      "type": "multiselect",
+      "category": "general",
+      "options": [
+        {"value": "steel", "label": "Steel"},
+        {"value": "stainless_steel", "label": "Stainless Steel"},
+        {"value": "aluminum", "label": "Aluminum"},
+        {"value": "carbon_steel", "label": "Carbon Steel"},
+        {"value": "brass", "label": "Brass"},
+        {"value": "copper", "label": "Copper"}
+      ],
+      "occurrences": 12,
+      "addedAt": "2025-12-09T00:00:00Z"
+    },
+    {
+      "id": "processes",
+      "label": "Processes",
+      "type": "multiselect",
+      "category": "general",
+      "options": [
+        {"value": "laser_cutting", "label": "Laser Cutting"},
+        {"value": "welding", "label": "Welding"},
+        {"value": "bending", "label": "Bending"},
+        {"value": "cnc_machining", "label": "CNC Machining"},
+        {"value": "milling", "label": "Milling"},
+        {"value": "grinding", "label": "Grinding"},
+        {"value": "surface_treatment", "label": "Surface Treatment"}
+      ],
+      "occurrences": 10,
+      "addedAt": "2025-12-09T00:00:00Z"
+    },
+    {
+      "id": "certifications",
+      "label": "Certifications",
+      "type": "multiselect",
+      "category": "quality",
+      "options": [
+        {"value": "iso_9001", "label": "ISO 9001"},
+        {"value": "en_1090", "label": "EN 1090"},
+        {"value": "iso_3834", "label": "ISO 3834"}
+      ],
+      "occurrences": 4,
+      "addedAt": "2025-12-09T00:00:00Z"
+    },
+    {
+      "id": "has_welding",
+      "label": "Has Welding Capability",
+      "type": "boolean",
+      "category": "processes",
+      "occurrences": 6,
+      "addedAt": "2025-12-09T00:00:00Z"
+    }
+  ],
+  "popularity": {
+    "materials": 0,
+    "processes": 0,
+    "cutting_types": 0,
+    "cutting_max_thickness": 0,
+    "certifications": 0,
+    "has_welding": 0
+  },
+  "successMetrics": {}
+}
