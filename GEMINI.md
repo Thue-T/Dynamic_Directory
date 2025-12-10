@@ -18,26 +18,25 @@ The frontend is built and functional with:
 
 ```
 /
-├── packages/
-│   └── frontend/           # Static site for GitHub Pages
-│       ├── index.html      # Main search interface
-│       ├── css/custom.css  # Custom styles
-│       └── js/
-│           ├── config.js   # Configuration settings
-│           ├── storage.js  # LocalStorage management
-│           ├── data-loader.js  # Loads company data
-│           ├── filters.js  # Self-evolving filter system
-│           ├── search.js   # Search logic and rendering
-│           └── app.js      # Main application entry
-├── data/
-│   ├── companies/
-│   │   └── companies.json  # Danish steel companies (12 entries)
-│   ├── schemas/
-│   │   ├── company-schema.json    # Company data structure
-│   │   ├── filter-schema.json     # Dynamic filter structure
-│   │   ├── analytics-schema.json  # Usage tracking
-│   │   └── initial-filters.json   # Discovered filters
-│   └── analytics/          # Usage data (future)
+/
+├── docs/                   # Main Application (GitHub Pages)
+│   ├── index.html          # Main search interface
+│   ├── css/custom.css      # Custom styles
+│   ├── js/                 # Application logic
+│   │   ├── config.js
+│   │   ├── storage.js
+│   │   ├── data-loader.js
+│   │   ├── filters.js
+│   │   ├── search.js
+│   │   └── app.js
+│   └── data/               # Metadata and Company Data
+│       ├── companies/
+│       │   └── companies.json
+│       └── schemas/
+│           ├── company-schema.json
+│           ├── filter-schema.json
+│           ├── analytics-schema.json
+│           └── initial-filters.json
 ├── research/               # AI-readable research documents
 │   ├── 00-ARCHITECTURE-SUMMARY.md
 │   ├── 01-HTML-TEMPLATES.md
@@ -67,7 +66,7 @@ Filters are NOT hardcoded. They are discovered from company data and prioritized
 2. **Success score** - How often this filter leads to contacts
 3. **Usage count** - How often users apply this filter
 
-See `packages/frontend/js/filters.js` for implementation.
+See `docs/js/filters.js` for implementation.
 
 ### Analytics Tracking
 
@@ -98,10 +97,10 @@ Companies have flexible `capabilities` objects that can contain any discovered p
 
 For local development:
 ```bash
-cd packages/frontend
-python -m http.server 8000
+# From root
+npm run dev:frontend
 # or
-npx serve .
+npx serve docs
 ```
 
 Then open http://localhost:8000
@@ -131,6 +130,6 @@ When ready to add dynamic discovery:
 
 When working on this project:
 1. `research/00-ARCHITECTURE-SUMMARY.md` - Full system design
-2. `data/schemas/company-schema.json` - Company data structure
-3. `packages/frontend/js/filters.js` - Self-evolving filter logic
-4. `packages/frontend/js/search.js` - Search and rendering
+2. `docs/data/schemas/company-schema.json` - Company data structure
+3. `docs/js/filters.js` - Self-evolving filter logic
+4. `docs/js/search.js` - Search and rendering

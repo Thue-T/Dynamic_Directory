@@ -48,7 +48,7 @@ const DataLoader = {
   async loadCompaniesFromFile() {
     try {
       // In GitHub Pages, this would be a relative path
-      const response = await fetch('../data/companies/companies.json');
+      const response = await fetch('./data/companies/companies.json');
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }
@@ -72,7 +72,7 @@ const DataLoader = {
    */
   async loadFiltersFromFile() {
     try {
-      const response = await fetch('../data/schemas/initial-filters.json');
+      const response = await fetch('./data/schemas/initial-filters.json');
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }

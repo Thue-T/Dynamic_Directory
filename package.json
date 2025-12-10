@@ -4,10 +4,9 @@
   "private": true,
   "description": "A web platform to intelligently search for and connect with Danish industrial production companies.",
   "scripts": {
-    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:frontend": "npx serve docs",
     "dev:backend": "npm run dev --workspace=backend",
-    "dev:agent": "npm run dev --workspace=agent",
-    "deploy": "cp -R packages/frontend/* docs/"
+    "dev:agent": "npm run dev --workspace=agent"
   },
   "workspaces": [
     "packages/*"
